@@ -9,8 +9,7 @@ Not so much complex & unnecessary thing Exists. All those basics functionality w
 
 ## Preview
 
-Insert Image Here //TODO
-
+<img src="https://i.imgur.com/464cSYj.jpg" width="60%" />
 
 ## Installation
 
@@ -76,21 +75,11 @@ backgroundColor | string | blue | No | hex/rgba/color
 
 ```js
     
-  const [isDisabled, setIsDisabled] = useState(true);
-
-  <CheckBox
-    value={isChecked}
-    onPress={handleOnPress}
     disabled={isDisabled} // Turn it to true if you want to disable checkBox.
     tickColor={'yellow'} // Any String Value for CheckBox Tick
     backgroundColor={'red'} // Any String Value for CheckBox background
-  />
 
 ```
-
-## Almost Completed
-
-I developed all the functionality, if their will need for any, I'll do it.
 
 ## For Future Issues & Contributions
 
