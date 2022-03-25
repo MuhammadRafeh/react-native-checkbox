@@ -1,6 +1,6 @@
 {
   "name": "react-native-checkedbox",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native checkbox with all the features, flexibility & Very easy to Use.",
   "main": "CheckBox.js",
   "scripts": {
