@@ -1,6 +1,6 @@
 {
   "name": "react-native-checkedbox",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Native checkbox with all the features, flexibility & Very easy to Use.",
   "main": "CheckBox.js",
   "scripts": {
@@ -11,7 +11,13 @@
     "url": "git+https://github.com/MuhammadRafeh/react-native-checkedbox.git"
   },
   "keywords": [
-    "checkbox"
+    "checkbox",
+    "react-native-checkbox",
+    "react native checkbox",
+    "react native check",
+    "check box",
+    "checked box",
+    "react native checkedbox"
   ],
   "author": "Muhammad Rafeh Atique",
   "license": "MIT",
