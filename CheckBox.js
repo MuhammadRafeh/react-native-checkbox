@@ -4,12 +4,11 @@ import PropTypes from 'prop-types';
 
 const CheckBox = props => {
   return (
-      <TouchableOpacity style={styles.touchableOpacity} onPress={props?.onPress?.bind(null, !props?.value)} disabled={props?.disabled}>
-        <View style={[styles.backLayer, {backgroundColor: props?.value ? 'rgba(42, 187, 155, 0.1)' : 'transparent'}]} />
-        <View style={[styles.container, { backgroundColor: props?.value ? (props?.backgroundColor ? props?.backgroundColor : 'blue') : 'transparent', borderColor: props?.backgroundColor ? props?.backgroundColor : 'blue'  }]}>
-          { props?.value && ( <Image source={require('./tick.png')} style={[{tintColor: props?.tickColor ? props.tickColor: 'white'} ]} resizeMode={'cover'} /> )}
-        </View>
-      </TouchableOpacity>
+    <TouchableOpacity style={styles.touchableOpacity} onPress={props?.onPress?.bind(null, !props?.value)} disabled={props?.disabled}>
+      <View style={[styles.container, { backgroundColor: props?.value ? (props?.backgroundColor ? props?.backgroundColor : 'blue') : 'transparent', borderColor: props?.backgroundColor ? props?.backgroundColor : 'blue' }]}>
+        {props?.value && (<Image source={require('../assets/tick.png')} style={[{ tintColor: props?.tickColor ? props.tickColor : 'white', width: 15, height: 15 }]} resizeMode={'cover'} />)}
+      </View>
+    </TouchableOpacity>
   );
 }
 
@@ -26,19 +25,10 @@ const styles = StyleSheet.create({
     borderRadius: 2,
   },
   touchableOpacity: {
-    width: 35, 
-    height: 33, 
-    justifyContent: 'center', 
+    width: 35,
+    height: 33,
+    justifyContent: 'center',
     alignItems: 'center'
-    // borderWidth: 1
-  },
-  backLayer: {
-    position: 'absolute', 
-    top: 4.5, 
-    left: 6, 
-    width: 24, 
-    height: 24, 
-    borderRadius: 3,
   }
 })
 
